@@ -70,6 +70,7 @@ public class StudentCRUD {
             System.out.println("请输入要修改的学生的学号：");
 
             //先判断学号是否输入正确才行========================
+            //先判断学号是否输入重复才行========================
 
             int SID = sc.nextInt();
             System.out.println("请输入添加的学生新姓名：");
@@ -89,13 +90,11 @@ public class StudentCRUD {
                     break;
                 }
             }
-
             System.out.println();
             System.out.println("修改成功！");
 
 
         }
-
 
 
     }
