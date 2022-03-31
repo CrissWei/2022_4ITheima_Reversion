@@ -8,10 +8,9 @@ public class StudentCRUD {
 
         ArrayList<Student> stu= new ArrayList<>();
 
-
-
         while (true) {
             Scanner scanner = new Scanner(System.in);
+            System.out.println();
             System.out.println();
             System.out.println();
             System.out.println();
