@@ -60,18 +60,19 @@ public class StudentCRUD {
     }
 
     private static void updateStudent(ArrayList<Student> stu) {
+        Scanner sc = new Scanner(System.in);
+        
 
 
         if (stu.isEmpty()){
             System.out.println("对不起，暂无数据，请先添加数据");
         }else {
-            Scanner sc = new Scanner(System.in);
             System.out.println("请输入要修改的学生的学号：");
-
+            int SID = sc.nextInt();
             //先判断学号是否输入正确才行========================
             //先判断学号是否输入重复才行========================
 
-            int SID = sc.nextInt();
+
             System.out.println("请输入添加的学生新姓名：");
             String name = sc.next();
             System.out.println("请输入添加的学生新年龄：");
@@ -167,5 +168,18 @@ public class StudentCRUD {
 
     public static void quitStudent(){
         System.exit(0);//JVM虚拟机退出程序
+    }
+
+    public static boolean IsSameID(ArrayList<Student> stu , Integer SID){
+        boolean flag=false;
+        for (int i = 0; i < stu.size(); i++) {
+            Student student = stu.get(i);
+
+            if (SID == student.getID()){
+                flag=true;
+                break;
+            }
+        }
+        return false;
     }
 }
