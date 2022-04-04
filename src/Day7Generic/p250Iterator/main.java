@@ -1,4 +1,4 @@
-package Day7Generic.p250Demo;
+package Day7Generic.p250Iterator;
 
 import java.util.ArrayList;
 import java.util.Collection;

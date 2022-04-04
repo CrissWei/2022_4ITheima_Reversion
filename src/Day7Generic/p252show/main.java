@@ -1,7 +1,5 @@
 package Day7Generic.p252show;
 
-import Day7Generic.p251_KTVE.GenericType;
-
 public class main {
     public static void main(String[] args) {
         GenericMethod gm = new GenericMethod();

@@ -1,6 +1,6 @@
 package Day7Generic.p251_KTVE;
 
-public class GenericType<T> {
+public class GenericClass<T> {
     private T t; //泛型 Type , Element , Key ,Value
     private T t2;
 

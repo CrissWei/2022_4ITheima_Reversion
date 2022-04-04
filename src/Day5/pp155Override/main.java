@@ -1,4 +1,4 @@
-package Day5.p2.p155Override;
+package Day5.pp155Override;
 
 public class main {
     public static void main(String[] args) {
